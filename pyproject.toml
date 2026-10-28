@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shake8pola-infersre_jd264"
+version = "0.1.0"
+description = "把候选项映射到类别上，算出推理服务 SRE 工程师·SLO 违约的归因链路的覆盖率并列出未覆盖的类别"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "shake8pola" }]
+keywords = ["ai", "llm", "cli", "analysis"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://shake8pola.github.io"
+Repository = "https://github.com/shake8pola/infersre_jd264"
+Issues = "https://github.com/shake8pola/infersre_jd264/issues"
+
+[project.scripts]
+infersre_jd264 = "infersre_jd264:main"
+
+[tool.setuptools]
+py-modules = ["infersre_jd264"]
